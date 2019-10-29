@@ -1,0 +1,33 @@
+
+#include <iostream>
+
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    string x;
+    long long int i,z,counter=0,c2=0;
+    cin>>z;
+    cin>>x;
+    for(i=0;i<x.size();i++)
+    {
+        if(i%5!=0)
+        {
+            if(x[i]=='a' or x[i]=='b' or x[i]=='c' or x[i]=='d' or x[i]=='e')
+                counter++;
+        }
+        else if (i%5==0)
+        {
+            if(counter==5)
+                c2++;
+            else
+                counter=0;
+        }
+        cout<<counter<<endl;
+    }
+    cout<<c2;
+       return 0;
+}
+
+REally ??
