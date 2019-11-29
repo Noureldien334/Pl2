@@ -1,0 +1,15 @@
+File f =new File("C:\\Users\\Yasuo\\Documents\\p.txt");
+   
+    public void Add_member (String Name,int id,String number,int age) throws FileNotFoundException
+    {
+      Scanner s=new Scanner(f);
+      Member m=new Member();
+      PrintWriter print=new PrintWriter(f);
+      m.memberId(id);
+      m.memberName(Name);
+      m.memberAge(age);
+      m.memberNumber(number);
+      print.write(Name+'$'+id+'$'+age+'$'+number);
+       print.close();
+     
+    }
