@@ -18,7 +18,8 @@ public class Member extends Person {
     private String startDate;
     private String endDate;
     private static int nextMemID = 0001;
-    
+    private int memberAge;
+    privae String memberName;
     public Member(){
         super();
         setMemberID (0);
