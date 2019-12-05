@@ -1,0 +1,14 @@
+public void search(int id) throws FileNotFoundException{
+Scanner s=new Scanner(f);
+        int s1=s.nextInt();
+        while(s.hasNextLine())
+        {
+            if(s1==id)
+            {
+            exit(0);
+            }
+            else
+                
+                System.out.println("Not found");
+        }
+        }
