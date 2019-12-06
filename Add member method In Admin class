@@ -1,0 +1,29 @@
+   
+package project_admin;
+import java.io.FileNotFoundException;
+import java.io.File;
+import java.io.PrintWriter;
+import static java.lang.System.exit;
+import java.util.Scanner;
+
+
+ File f =new File("C:\\Users\\Yasuo\\Documents\\p.txt");
+  
+public void Add_member (int memberID , String memberName , int memberAge ,String memberGender , String memberAddress ,String  memberEmail, String memberPhoneNo , int membershipPrice , String sartDate, String endDate) throws FileNotFoundException
+    {
+      Member m=new Member();
+      PrintWriter print=new PrintWriter(f);
+      m.memberId(memberID);
+      m.memberName(memberName);
+      m.memberAge(memberAge);
+      m.memberGender(memberGender);
+      m.memberAddress(memberAddress);
+      m.memberEmail(memberEmail);
+      m.memberPhone(memberPhoneNo);
+      m.MembershipPrice(membershipPrice);
+      m.Startdate(sartDate);
+      m.endDate(endDate);
+      print.write(m.toString());
+       print.close();
+     
+    }
