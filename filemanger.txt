@@ -1,0 +1,21 @@
+* and open the template in the editor.
+ */
+package javaapplication15;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+/**
+ *
+ * @author Nour
+ */
+public class filemanger implements Serializable {
+   public void Fadd(Object n,String filepath) throws FileNotFoundException, IOException{
+       ObjectOutputStream infile=new ObjectOutputStream(new FileOutputStream(filepath));
+       infile.writeObject(n);
+       
+    }
+}
