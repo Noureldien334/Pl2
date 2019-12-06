@@ -1,0 +1,67 @@
+
+package javaapplication15;
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import javax.swing.*;
+/**
+ *
+ * @author Nour
+ */
+public class coach extends JFrame  {
+    private String  plan ;
+    private String Timeline;
+    private filemanger mangerfile;
+      
+    public String getPlan() {
+        return plan;
+    }
+
+    public void setPlan(String plan) {
+        this.plan = plan;
+    }
+
+    public String getTimeline() {
+        return Timeline;
+    }
+
+    public void setTimeline(String Timeline) {
+        this.Timeline = Timeline;
+    }
+
+    /**
+     *
+     */
+    public  coach() throws NullPointerException {
+      setSize(500,600);
+      setTitle("coach");
+        
+        JPanel pn1=new JPanel(new FlowLayout());
+      JLabel timelinelabel=new  JLabel("plan:");  
+      JTextField plan1=new JTextField(15);
+    //  this.plan=plan1.getText();
+      JLabel timelinelabel2=new  JLabel("timeline:");
+      
+      JTextField timeline1=new JTextField(15);
+      //this.Timeline=timeline1.getText();
+      JButton nutt=new  JButton("addplane");
+      
+      pn1.add(timelinelabel);
+      pn1.add(plan1);
+      pn1.add(timelinelabel2);
+      pn1.add(timeline1);
+      pn1.add(nutt);
+      add(pn1);
+      
+      
+}
+    void addcoach() throws FileNotFoundException, IOException{
+        
+   mangerfile=new filemanger();
+   mangerfile.Fadd(this, "search.bin");
+   
+   
+    }
+}
