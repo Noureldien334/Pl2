@@ -38,9 +38,9 @@ public class admin {
       StringTokenizer take=new StringTokenizer(line,"~");
       int x=(int) take.nextElement();
       if(x==memberID){
-      out.println(m.getMemberID()+"~"+"~"+m.getName()+"~"+m.getAge()+"~"+m.getGender()+"~"+m.getMemberAddress());
+      out.println(m.getMemberID()+"~"+"~"+m.getName()+"~"+m.getAge()+"~"+m.getGender()+"~"+m.getMemberAddress()+"~"+m.getMemberEmail()+"~"+);
       }else{
-      out.println(m.getMemberID()+"~"+"~"+m.getName()+"~"+m.getAge()+"~"+m.getGender()+"~"+m.getMemberAddress());
+      out.println(line);
       
       }
       
