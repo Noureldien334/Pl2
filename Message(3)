@@ -11,9 +11,7 @@ public class MessageToAllMembers {
     {
             SendMessage s = new SendMessage();
             CoachMessage m = new CoachMessage();
-            m.MessageFunction(s);
-        
-        
+          
     }
     
     
