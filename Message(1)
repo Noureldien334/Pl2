@@ -49,11 +49,14 @@ public class SendMessage {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 
-                  try {
-                    o.MessageFunction(ta.getText());
-                   }
-                 catch (IOException ex) {
-                }
+                  try
+                  {
+                           o.MessageFunction(ta.getText());
+                  }
+                 catch (IOException e) 
+                 {
+                           System.out.println(e);
+                 }
                   
                   JOptionPane.showMessageDialog(null,"The Message Sent Successfully");
                   
