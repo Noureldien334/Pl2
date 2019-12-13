@@ -1,0 +1,21 @@
+
+package messagetoallmembers;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class MessageToAllMembers {
+
+    
+    public static void main(String[] args) throws FileNotFoundException, IOException
+    {
+            SendMessage s = new SendMessage();
+            CoachMessage m = new CoachMessage();
+            m.MessageFunction(s);
+        
+        
+    }
+    
+    
+    
+}
