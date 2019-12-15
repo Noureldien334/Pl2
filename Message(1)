@@ -40,7 +40,7 @@ public class SendMessage {
                  f2.setLayout(new FlowLayout());
                  f2.setLocation(650, 250);
                  ta.append(" ");
-                 f2.add(ta);
+                 f2.add(sp);
                  f2.add(b2);
              
             }
